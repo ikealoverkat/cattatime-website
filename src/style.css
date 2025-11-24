@@ -1,1 +1,89 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@300&family=Crimson+Text:wght@400;600;700&display=swap');
+
+@font-face {
+    font-family: 'ZT Formom';
+    src: url('../fonts/ZTFormom.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ZT Formom Italic';
+    src: url('../fonts/ZTFormom.otf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Commissioner';
+    src: url('../fonts/Commissioner.ttf');
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'ZT Formom', serif;
+}
+
+p {
+    font-family: 'Commissioner', sans-serif;
+    font-weight: light;
+}
+
+.wave-text span {
+    animation: wave 3s ease-in-out infinite;
+}
+.wave-text span:nth-child(1) {
+    animation-delay: 0s;
+}
+.wave-text span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.wave-text span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.wave-text span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-1vh);
+    }
+}
+
+.fadeanim1 {
+    animation: fade 5s ease-in-out infinite;
+}
+.fadeanim2 {
+    animation: fade 5s ease-in-out infinite;
+    animation-delay: 2.5s;
+}
+
+@keyframes fade {
+    0%, 100% {
+        opacity: 0;
+        display: none;
+    }
+    50% {
+        opacity: 1;
+        display: inline-block;
+    }
+}
+
+:root {
+    --default-pink: #efc3cb;
+    --lighter-pink: #f1d8dd;
+}
+
+.bg-fill-custom-lighterpink {
+    background-color: var(--lighter-pink);
+}
+
+.bg-fill-custom-defaultpink {
+    background-color: var(--default-pink);
+}

@@ -7,8 +7,62 @@
     <link href="src/style.css" rel="stylesheet">
     <title>cattatime-website</title>
   </head>
-  <body>
-    <h1>herro</h1>
-    <script src="/src/main.js"></script>
+  
+  <body class="bg-fill-custom-lighterpink">
+    <!-- add a colour picker similar to the one in the actual app at the top -->
+    <!-- cattatime header -->
+    <div class="bg-fill-custom-defaultpink p-[4vh] px-[10vh] rounded-2xl flex flex-row justify-center mx-[6vh] mt-[6vh] mb-[4vh] gap-[1vh]"> 
+      <img src="images/logo.png" alt="cattatime logo" class="h-[12vh]">
+      <div class="flex flex-col justify-center">
+        <h1 class="[&>span]:text-4xl wave-text gap-[0.1vh] flex flex-row">
+          <span>Cat</span>
+          <span>ta</span>
+          <span>ti</span>
+          <span>me</span>
+        </h1>    
+        <h2 class="relative text-2xl fadeanim1">Fill your coding cup!
+          <h2 class="absolute text-2xl fadeanim2 translate-y-[2vh] mr-[4vh]">a Hackatime extension</h2>
+        </h2>
+      </div>
+    </div>
+    <!-- <div class="justify-center m=[6vh] text-center">
+      <h1 class="[&>span]:text-2xl wave-text gap-[0.6vh] flex flex-row m-[6vh]">
+        <span>meet</span>
+        <span>your</span>
+        <span>coding</span>
+        <span>companion</span>
+      </h1>
+    </div> -->
+    <div class="mx-[6vh]">
+      <h1 class="text-2xl">meet your coding companion</h1>
+      <!-- pic of boba cat + text -->
+      <div class="flex flex-col gap-[2vh]">
+        <p class="text-sm">Code for a few hours, fill your cup of time-juice, and grow a pet boba cat! cash your hours in for coins, and use coins to buy hats for your cat :D</p>
+      </div>
+    </div>
+    <div class="mx-[6vh] my-[2vh]">
+      <h1 class="text-2xl text-right">sign in with slack ID</h1>
+      <!-- yay slack -->
+      <div class="flex flex-col gap-[2vh]">
+        <!-- text -->
+        <p class="text-sm text-right">Use your <strong class="font-bold">Hack Club Slack ID</strong> to sign in! Cattatime will automatically get your coding hours from Hackatime. (don't know what Hackatime is? find out <a href="https://hackatime.hackclub.com" class="text-pink-900">here</a>)
+        </p>  
+        <!-- normal box for mobile -->
+          <div class="text-md shadow-md shadow-black/25 p-[2vh] bg-white sm:inline md:hidden">
+            <p><strong class="font-bold">note:</strong> you can find your Slack ID in the <strong class="bg-gray-200 p-[0.3vh] rounded-sm text-sm">#what-is-my-slack-id</strong> channel!</p>
+          </div>
+        <!-- sticky note for desktop -->
+        <div id="stickynote" class="w-[18vh] text-md shadow-md shadow-black/25 p-[2vh] bg-white left-[18vh] top-[32vh] hidden md:block absolute">
+          <!-- drag me and x -->
+          <div class="flex flex-row justify-between text-xs text-gray-400">
+            <p class="mt-[-1vh] mb-[0.2vh] mx-[-1vh]">drag me!</p>
+            <p id="stickynote_closebutton" class="mt-[-1vh] mb-[0.2vh] mx-[-0.7vh]">X</p>
+          </div>
+          <p><strong class="font-bold">note:</strong> you can find your Slack ID in the <strong class="bg-gray-200 p-[0.5vh] rounded-sm text-sm">#what-is-my-slack-id</strong> channel!</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="/src/main.js" type="module"></script>
   </body>
 </html>
